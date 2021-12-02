@@ -1,0 +1,57 @@
+// Section about start
+#about {
+    width: 100%;
+    padding: 120px;
+    margin-top: 150px;
+
+    .container {
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .col {
+                .about-content {
+                    h1 {
+                        font-size: 48px;
+                        font-weight: 300;
+                        color: #384141;
+
+                        span {
+                            color:$main-color;
+                            line-height: 1;
+                        }
+
+                    }
+
+                    p {
+                        margin: 30px auto;
+                        font-family: "Open sans", sans-serif;
+                        font-size: 14px;
+                        color: $paragraph-color;
+                        letter-spacing: 1px;
+                        font-weight: 300;
+                        line-height: 1.7;
+                    }
+
+                    a {
+                        background: linear-gradient(to right, #4b99df, #3faadd, #2dc2d8);
+                        color: white;
+                        border-radius: 50px;
+                        padding: 20px 40px;
+                        width: 16px;
+                        height: 42px;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            background: linear-gradient(to left, #4b99df, #3faadd, #2dc2d8);
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Section about ends

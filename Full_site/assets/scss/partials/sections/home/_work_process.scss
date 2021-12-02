@@ -1,0 +1,60 @@
+// Section work-process start
+#work-process {
+    width: 100%;
+    height: auto;
+    padding: 120px;
+    background-color: #26313c;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .title {
+            color: $secondary-color;
+
+            h1 {
+                font-size: 48px;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+
+            p {
+                font-size: 20px;
+                letter-spacing: 1px;
+                font-weight: 200;
+            }
+        }
+
+        .concepts {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+
+            .concept-items {
+                margin-top: 60px;
+                color: $secondary-color;
+
+                a {
+                    color: $secondary-color;
+                    font-size: 25px;
+                    border: 1px solid $secondary-color;
+                    padding: 30px;
+                    border-radius: 50%;
+                    transition: 0.4s ease-in-out;
+
+                    &:hover {
+                        background: linear-gradient(to left, #4b99df, #3faadd, #2dc2d8);
+                    }
+                }
+
+                .item-title {
+                    margin-top: 60px;
+                }
+            }
+        }
+    }
+}
+
+// Section work-process ends

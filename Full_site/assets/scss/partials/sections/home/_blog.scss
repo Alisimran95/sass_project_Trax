@@ -1,0 +1,115 @@
+// Section blog start
+#blog {
+    width: 100%;
+    background-color: $secondary-color;
+    margin-top: 20px;
+
+    .container {
+        padding: 120px;
+
+        .row {
+            .col-1 {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                text-align: center;
+                padding-bottom: 60px;
+
+                .title {
+                    padding: 10px;
+
+                    h3 {
+                        color: $main-color;
+                        font-size: 16px;
+                        font-weight: 500;
+                        padding: 10px;
+                    }
+
+                    h1 {
+                        font-size: 48px;
+                        color: #384141;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .col-2 {
+                .boxes {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+
+                    .box {
+                        display: flex;
+                        flex-direction: column;
+                        width: 30%;
+                        background-color: white;
+                        opacity: 35;
+
+                        .image {
+                            img {
+                                max-width: 100%;
+                                object-fit: cover;
+                                max-height: 100%;
+                            }
+                        }
+
+                        .content {
+                            padding: 40px 30px;
+
+                            h1 {
+                                font-size: 28px;
+                                color: #384141;
+                                font-weight: 400;
+                                cursor: pointer;
+                            }
+
+                            .history {
+                                margin: 20px 0px;
+                                padding: 10px;
+
+                                li {
+                                    display: inline-block;
+                                    list-style: none;
+                                    padding: 10px;
+
+                                    a {
+                                        color: #384141;
+                                        text-decoration: none;
+                                        font-size: 14px;
+
+                                        &:hover {
+                                            color: $main-color;
+                                            transition: 0.3s ease-in-out;
+                                        }
+
+                                        i {
+                                            color: #384141;
+
+                                            &:hover {
+                                                color: $main-color;
+                                                transition: 0.3s ease-in-out;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            p {
+                                color: #f6f7f8;
+                            }
+                        }
+
+                        &:hover h1 {
+                            color: #23ced5;
+                            transition: 0.4s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// section blog ends

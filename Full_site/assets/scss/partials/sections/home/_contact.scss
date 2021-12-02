@@ -1,0 +1,160 @@
+// Section Contact start
+#contact {
+    width: 100%;
+
+    .container {
+        padding: 120px;
+
+        .row {
+            .col-1 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+
+                .title {
+                    padding: 30px;
+
+                    h3 {
+                        color: $main-color;
+                        font-size: 16px;
+                        font-weight: 500;
+                        padding: 10px;
+                    }
+
+                    h1 {
+                        font-size: 48px;
+                        color: #384141;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        color: $secondary-color;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .col-2 {
+                display: flex;
+
+                .form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+
+                    input {
+                        width: 100%;
+                        height: 50px;
+                        border: 1px solid $paragraph-color;
+                        border-radius: 5px;
+                        padding: 10px;
+                        margin-top: 10px;
+                    }
+
+                    textarea {
+                        width: 100%;
+                        height: fit-content;
+                        padding: 10px;
+                        border: 1px solid $paragraph-color;
+                        border-radius: 5px;
+                        margin-top: 10px;
+                    }
+
+                    a {
+                        margin-top: 10px;
+                        width: 100%;
+                        height: 50px;
+                        background-image: linear-gradient(to right, #5192e1, #5192e1, #23ced5);
+                        text-align: center;
+                        color: $secondary-color;
+                        padding: 10px;
+                        border-radius: 20px;
+                    }
+                }
+
+                .form-info {
+                    width: 50%;
+                    margin-left: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-align: left;
+
+                    .title {
+                        padding: 10px;
+
+                        h3 {
+                            color: $main-color;
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+
+                        h2 {
+                            font-size: 28px;
+                            color: #384141;
+                            font-weight: 500;
+                        }
+
+                    }
+
+                    .icons-list {
+                        li {
+                            display: inline-block;
+                            list-style-type: none;
+                            padding: 10px;
+
+                            a {
+                                text-decoration: none;
+                                color: black;
+                                font-size: 14px;
+
+                                i {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 50%;
+                                    width: 35px;
+                                    height: 35px;
+                                    transition: all 0.4s ease-in-out;
+                                }
+                            }
+
+                            &:nth-child(1):hover i {
+                                background-color: rgb(62, 62, 155);
+                                color: white;
+                            }
+
+                            &:nth-child(2):hover i {
+                                background-color: rgb(159, 159, 253);
+                                color: white;
+                            }
+
+                            &:nth-child(3):hover i {
+                                background-color: rgb(56, 56, 104);
+                                color: white;
+                            }
+
+                            &:nth-child(4):hover i {
+                                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+                                color: white;
+                            }
+
+                            &:nth-child(5):hover i {
+                                background-color: green;
+                                color: white;
+                            }
+
+                            &:nth-child(6):hover i {
+                                background-color: lightskyblue;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Section contact ends

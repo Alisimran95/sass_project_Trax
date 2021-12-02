@@ -1,0 +1,160 @@
+// Section pricing start
+#pricing {
+    width: 100%;
+    background-color: $secondary-color;
+    opacity: 3;
+
+    .container {
+        padding: 120px;
+
+        .row {
+            .col-1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                .title {
+                    p {
+                        color: $main-color;
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                        line-height: 1.4;
+                        font-weight: 300;
+                    }
+
+                    h1 {
+                        font-size: 48px;
+                        color: #384141;
+                        font-weight: 400;
+                        line-height: 1.7;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                .buttons {
+                    padding: 20px;
+                    position: relative;
+
+                    .btn {
+                        color: #384141;
+                        padding: 10px 110px;
+                        border-radius: 30px;
+                        background-color: white;
+                        position: absolute;
+
+                        &::before {
+                            content: "Monthly";
+                            position: absolute;
+                            padding: 10px 100px;
+                            border-radius: 30px;
+                            right: 0;
+                            top: 0;
+                            transform: translateX(-90%);
+                            color: white;
+                            background-image: linear-gradient(to right, #5192e1 0%, #23ced5 51%, #5192e1 100%);
+                        }
+                    }
+                }
+            }
+
+            .col-2 {
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-around;
+
+                .box {
+                    width: 30%;
+                    background-color: white;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    padding: 40px 16px;
+                    margin: 10px 0px;
+
+                    .title {
+                        padding: 20px;
+
+                        h3 {
+                            font-size: 24px;
+                            font-family: "Montserrat"sans-serif;
+                            color: #384141;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            color:$secondary-color;
+
+                        }
+                    }
+
+                    .price {
+                        padding: 15px 0 14px;
+
+                        h1 {
+                            color: #384141;
+                            font-size: 48px;
+                            font-family: "Montserrat"sans-serif;
+                            font-weight: 300;
+
+                            span {
+                                font-size: 15px;
+                                font-family: "Open Sans", sans-serif;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    .plan {
+                        padding: 25px 0px;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: left;
+
+                        li {
+                            padding: 15px;
+                            font-size: 16px;
+                            font-family: "Open Sans", sans-serif;
+                            color: $secondary-color;
+                        }
+                    }
+
+                    a {
+                        color: $secondary-color;
+                        padding: 15px 40px;
+                        border-radius: 20px;
+                        background-color: #24cdd5;
+                        font-weight: 400;
+                    }
+
+                    &:hover {
+                        background-color: #26313c;
+                        transition: 0.4s ease-in-out;
+                    }
+
+                    &:hover .title,
+                    &:hover .price {
+                        visibility: hidden;
+
+                    }
+
+                    &:hover a {
+                        background-color: transparent;
+                        border: 1px solid $secondary-color;
+
+                        &:hover {
+                            background-color: $secondary-color;
+                            color: #384141;
+                            transition: 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Section pricing ends

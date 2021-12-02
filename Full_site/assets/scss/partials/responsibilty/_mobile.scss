@@ -1,0 +1,36 @@
+// Mobile responsibilty
+
+
+@media only screen and(max-width:576px) {
+    #navbar {
+        min-width: 100%;
+        display: block;
+        justify-content: space-between;
+
+        ul {
+            visibility: hidden;
+        }
+    }
+
+    //   intro section 
+    .row {
+        padding: 0;
+    }
+
+    .row-2 {
+        flex-direction: column;
+
+        .col {
+            position: absolute;
+        }
+
+        .main {
+            position: relative;
+            z-index: 100;
+            min-width: 80%;
+            transform: translateY(-40%);
+        }
+    }
+
+    //  intro section ends
+}

@@ -1,0 +1,99 @@
+// Section Portfolio start
+#portfolio {
+    width: 100%;
+
+    .container {
+        padding: 120px;
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+            text-align: center;
+
+            .col-1 {
+                .title {
+                    padding: 10px;
+
+                    h5 {
+                        color: $main-color;
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+
+                    h1 {
+                        color: #384141;
+                        font-size: 48px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .col-2 {
+                .nav-list {
+                    display: flex;
+                    padding: 20px;
+
+                    li {
+                        list-style: none;
+                        padding: 10px;
+
+                        a {
+                            text-decoration: none;
+                            color: #384141;
+                            font-size: 14px;
+                        }
+
+                        &:first-child a {
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }
+
+            .col-3 {
+                .grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+
+                    // grid-template-rows: 60% 40%;
+                    .item {
+                        position: relative;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            left: 0;
+                            top: 0;
+                            
+                        }
+                        &:hover::after{
+                            background: radial-gradient(rgba(35, 206, 213, 0.9), rgba(81, 146, 225, 0.9) 50%);
+                        }
+                    }
+                }
+            }
+
+            .col-4 {
+                padding-top: 40px;
+
+                a {
+                    font-size: 14px;
+                    padding: 10px 30px;
+                    color: white;
+                    background-image: linear-gradient(to right, #5192e1, #5192e1, #23ced5);
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+}
+
+// Section protfolio ends
