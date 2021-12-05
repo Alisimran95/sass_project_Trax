@@ -1,0 +1,31 @@
+#work-process .work-process-row{
+    background-color:$light-black;
+    color: white;
+    padding: 150px 0px;
+
+    .concept-items{
+         a{
+            font-size: 20px;
+            border-radius: 50%;
+            padding:30px;
+            border: 2px solid $white-color;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: "";
+                width: 120px;
+                height: 3px;
+                background-color: $white-color;
+                left: 100%;
+                top: 50%;
+            }
+            &:hover{
+                color: $white-color;
+                background-image: $aqua-bg-gradient;
+            }
+        }
+        .item-title{
+            margin-top: 50px;
+        }  
+    }
+}

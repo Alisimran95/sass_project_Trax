@@ -1,0 +1,61 @@
+#adress{
+    background-color: $light-black;
+    padding: 70px;
+    color: $white-color;
+    ul{
+        padding: 0;
+    }
+    .social-items {
+        padding-top: 20px;
+        li{
+            display: inline-block;
+            border: 1px solid $white-color;
+            border-radius: 50%;
+            overflow: hidden;
+                i {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    transition: all 0.6s ease-in-out;
+                } 
+            &:nth-child(1):hover i {
+                background-color: rgb(62, 62, 155);
+                color: white;
+            }
+            &:nth-child(2):hover i{
+                background-color: rgb(159, 159, 253);
+                color: white;
+            }
+
+            &:nth-child(3):hover i{
+                background-color: rgb(56, 56, 104);
+                color: white;
+            }
+
+            &:nth-child(4):hover i {
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+                color: white;
+            }
+        }
+    }
+    h2{
+        font-size: 26px;
+        display: inline-block   ;
+    }
+    .paragraph{
+        padding-top: 20px ;
+    }
+
+    .news .news-link{
+        padding-top: 20px;
+    }
+    .pages-link li{
+        padding-top: 10px;
+    }
+    .box-3{
+        margin: 0 0 60px 48px;
+    }
+}

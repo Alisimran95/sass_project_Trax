@@ -1,0 +1,29 @@
+header .navigation-menu {
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+    .nav-link-2 {
+        color: white;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $main-color;
+            bottom: 0;
+            left: 0;
+            visibility: hidden;
+            transition: all 0.1s ease-in-out;
+        }
+        &:hover::after{
+            visibility: visible;
+        }
+        &:hover{
+            color: $main-color;
+        }
+    }
+    .navigation-list li{
+        padding: 20px;
+    }
+}

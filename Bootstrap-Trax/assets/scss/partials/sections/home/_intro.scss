@@ -1,0 +1,116 @@
+#intro {
+    background-image: url(../images/banner1-4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #00000082;
+    }
+
+    .for-index {
+        position: relative;
+        z-index: 100;
+    }
+
+    .slide-location {
+        a {
+            display: block;
+        }
+
+        &:nth-child(1) a {
+            border-bottom: 5px solid $white-color;
+            width: 10%;
+        }
+    }
+
+    .social-media {
+        li {
+            display: block;
+            border-radius: 50%;
+            i {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                transition: all 0.4s ease-in-out;
+            }
+            &:nth-child(1):hover i {
+                background-color: rgb(62, 62, 155);
+                color: white;
+            }
+
+            &:nth-child(2):hover i {
+                background-color: rgb(159, 159, 253);
+                color: white;
+            }
+
+            &:nth-child(3):hover i {
+                background-color: rgb(56, 56, 104);
+                color: white;
+            }
+
+            &:nth-child(4):hover i {
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+                color: white;
+            }
+        }
+    }
+
+    .content {
+        letter-spacing: 3px;
+        line-height: 1.7;
+        h1 {
+            font-size: 35px;
+            font-weight: 100;
+        }
+
+        .bold-heading {
+            font-size: 48px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 13px;
+            color: #89898a;
+        }
+    }
+    .boxes{
+        width: 100%;
+        padding: 25px 0;
+        transform: translateY(-50%);
+        .box{
+            width: 30%;
+            padding: 50px 30px;
+            background-color: $light-black;
+            transition: all 0.5s ease;
+            i{
+                font-size: 20px;
+            }
+            h3{
+                margin: 15px auto;
+            }
+            &:hover i{
+                transform: scale(1.5);
+            }
+        }
+        .middle{
+            transform: scale(1.16);
+            background-image:$aqua-bg-gradient;
+            &:hover{
+                background-image: $aqua-bg-gradient-to-left;
+            }
+        }
+    }
+}

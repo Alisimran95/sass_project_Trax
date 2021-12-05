@@ -1,0 +1,22 @@
+#counter{
+    background-image: url(../images/counter-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+    .counter{
+        padding: 135px;
+        color: $white-color;
+        .site-history{
+            h1{
+                font-size: 100px;
+                font-weight: 200;
+            }
+        }
+        p{
+            letter-spacing: 1px;
+        }
+    }
+}

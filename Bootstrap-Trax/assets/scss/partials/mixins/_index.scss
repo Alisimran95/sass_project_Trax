@@ -1,0 +1,8 @@
+@mixin boxes-display-config($text-position:center) {
+        text-align: $text-position;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0px;
+}

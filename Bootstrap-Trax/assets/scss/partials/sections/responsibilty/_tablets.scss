@@ -1,0 +1,69 @@
+@media (min-width:767px ) and (max-width:1000px) {
+    #intro{
+        .slide-location,.social-media{
+            visibility: hidden;
+        }
+    }
+    #work-process .concept-items a::before{
+        visibility: hidden;
+    }
+
+    // Our-apps section start
+
+    #our-apps .col-f-responsive{
+        h1,p{
+            font-size: 14px;
+            line-height: 1;
+            display: inline-block;
+        }
+        }
+        #our-apps .box{
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+        #our-apps .app-info-content{
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+
+    //   Our-apss section ends
+
+    // Counter section start
+    #counter .counter{
+        padding: 0;
+    }
+    .counter-row{
+        justify-content: space-between;
+        padding: 50px;
+    }
+    .counter-col-1{
+        width:33.33%;
+    }
+    // Counter ends
+
+    // Our-experts-start
+    #our-experts{
+        .title h1,h5{
+            line-height: 1;
+            font-size: 16px;
+            display: inline-block;
+        }
+        .removed-col{
+            display: none;
+        }
+        
+        .expert-col-for-responsible{
+            justify-content: center;
+        }
+        .expert-col{
+            padding: 0px;
+        }
+    }
+
+    #adress{
+        .box-3{
+            margin: 0;
+        }
+    }
+}

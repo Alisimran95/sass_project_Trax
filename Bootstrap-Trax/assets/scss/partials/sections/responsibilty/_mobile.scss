@@ -1,0 +1,221 @@
+// Rsponsibilty fro mobiles
+@media only screen and(max-width:768px){
+    // Intro start
+    #intro{
+        .social-media,.slide-location{
+            display: none;
+        }
+        .content{
+            min-width: 100%;
+            padding: 0;
+        }
+        .boxes{
+            flex-direction:column; 
+            position: relative;
+            right: -7px;
+            .box{
+                position: absolute;
+                min-width: 100%; 
+            }
+            .middle{
+                z-index: 100; 
+            }
+            
+        }
+        
+    }
+    // Intro ends
+    // About start
+    #about .about-row{
+        padding: 0;
+        margin-top: 200px;
+        text-align: center;
+    }
+    .content h2{
+        min-width: 100%;
+    }
+    // About ends
+    // Work-prcess start
+    #work-process .work-process-row{
+        padding: 0;
+        min-width: 100%;
+        .title{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            h5{
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+            h1{
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
+        }
+        .concepts{
+            flex-direction: column;
+            margin: 10px 50px;
+            .concept-items{
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                margin: 0px 20px 30px;
+                a::before{
+                    visibility: hidden;
+                }
+            }
+        }
+
+    }
+    // Work-process ends
+    // Our-app section start
+    #our-apps {
+        .app-title{
+        flex-direction: column;
+        h1{
+            font-size: 30px;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    .app-info-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .boxes{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            margin: 0;
+            text-align: center;
+            padding: 0;
+            .text{
+                min-width: 150%;
+                text-align: left;
+                line-height: normal;
+            }
+        }
+    }
+}
+    // Our-app section ends
+
+    // COUNTER SECTION STRART
+     #counter {
+        .counter-row{
+            flex-direction: column;
+            padding-top: 100px;
+        }
+        .counter{
+            padding: 0;
+        }
+        &{
+            display: block;
+            background-attachment: initial;
+            background-position:inherit;
+            height: 70vh;
+        }
+     }
+    // COUNTER SECTION ENDS
+
+    // Our Experts section start
+     #our-experts{
+         .expert-title-col{
+             flex-direction: column;
+             padding: 0;
+             justify-content: center;
+             text-align: center;
+         }
+         .expert-col-for-responsible{
+            flex-direction: column;
+         }
+     }
+    // Our Experts section ends
+
+    // Pricing-offers section start
+
+    #pricing-offers{
+
+        .col-for-responsibilty-1{
+
+                .offers-btn-1{
+                        padding: 10px 60px;
+                }
+                .offers-btn-2{
+                    padding: 10px 60px;
+                }
+        }
+        .col-for-responsibilty-2{
+            flex-direction: column;
+            .pricing-col{
+                padding: 5px 100px;
+                margin: 5px 5px;
+                .title {
+                    margin: 10px auto;
+                }
+            }
+        }
+    }
+    // Pricing-offers section ends
+    // TEstimonial section start
+    #testimonial{
+        .testimonial-col-2{
+            transform: translateY(-70%);
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    // testimonila section ends
+
+    // Blog section start
+
+    #blog{
+        padding: 0;
+        margin: 0;
+        .blog-col-resp{
+            flex-direction: column;
+            align-items: center;
+        }
+        .blog-card{
+            margin:0;
+            padding: 0;
+        }
+        .card-body{
+            padding: 0px;
+            margin: 0;
+        }
+        .blog-rating-list li{
+            padding: 0px;
+            margin: 0;
+        }
+    }
+    // blog section ends
+
+    // Contact section start
+    #contact{
+        padding: 0;
+        .col-for-resp{
+            flex-direction: column;
+        }
+        .form-content{
+            justify-content: center;
+            align-items: center;
+            margin: 10px 10px;
+            background-color: rgb(131, 120, 120);
+        }
+    }
+    // Contact section ends
+
+    // Adress section start
+    #adress{
+        padding: 0px;
+        .box-3{
+            margin: 0;
+        }
+        .box-1,box-2,box-3,box-4{
+            padding-top: 40px;
+        }
+    }
+    // Adress section edns
+}

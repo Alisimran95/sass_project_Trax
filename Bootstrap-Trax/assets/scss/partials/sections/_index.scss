@@ -1,0 +1,24 @@
+// Import utils
+@import "../variables/index";
+@import "../mixins/index";
+@import "../extends/index";
+
+// Import sections from folder
+@import "./home/resets";
+@import "./home/header";
+@import "./home/intro";
+@import "./home/about";
+@import "./home/our-process";
+@import "./home/our_apps";
+@import "./home/counter";
+@import "./home/our_experts";
+@import "./home/pricing_offers";
+@import "./home/portfolio";
+@import "./home/testimonial";
+@import "./home/blog";
+@import "./home/contact";
+@import "./home/adress";
+
+// Import Responsibility
+@import "./responsibilty/tablets";
+@import "./responsibilty/mobile";

@@ -1,0 +1,38 @@
+#our-apps {
+    .image{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .app-title{
+        h1{
+            color: $main-color;
+        }
+    }
+    .boxes{
+       @include boxes-display-config($text-position:right);
+        &__boxes-two{
+            @include boxes-display-config($text-position:left);
+        }
+    }
+    .box{
+        margin: 48px 0px 0px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        i{
+            font-size: 40px;
+            font-weight: bold;
+            color: $main-color;
+        }
+        .text{
+            margin-top: 20px;
+        }
+        &:hover i{
+            transform: translateY(-20%);
+        }
+        &:hover h3{
+            color: $main-color;
+        }
+    }
+   
+}

@@ -1,0 +1,21 @@
+#about .about-row{
+    padding: 150px 60px;
+    .content{
+        h2{
+            width: 85%;
+        }
+        .aqua-heading{
+            color: $main-color;
+        }
+    }
+    .about-btn{
+        background-image:$aqua-bg-gradient;
+        border-radius: 20px;
+        color: $white-color;
+        padding: 10px 30px;
+        transition: all 0.3s;
+        &:hover{
+            background-image: $aqua-bg-gradient-to-left;
+        }
+    }
+}
